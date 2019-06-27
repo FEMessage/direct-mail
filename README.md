@@ -14,6 +14,7 @@
 * [Feature](#feature)
 * [Install](#install)
 * [Example](#example)
+* [Attention](#attention)
 * [Reference](#reference)
 * [Contributors](#contributors)
 * [License](#license)
@@ -106,6 +107,13 @@ directMail
   .then(resp => {})
   .catch(err => {})
 ```
+
+[⬆ Back to Top](#table-of-contents)
+
+## Attention
+`HtmlBody` 或 `TextBody` 不能出现英文输入法的括号 ()，否则签名不通过。
+
+总之，邮件内容最好不要出现英文输入法的字符。
 
 [⬆ Back to Top](#table-of-contents)
 
