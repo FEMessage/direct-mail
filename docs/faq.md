@@ -42,7 +42,10 @@
 
 发信地址是我们发送邮件时，在收件方显示的发件邮箱地址。
 
-![image.png](https://cdn.nlark.com/yuque/0/2019/png/160590/1561613972131-f93b7414-51d2-47ca-9199-b3c6d2683c91.png#align=left&display=inline&height=537&name=image.png&originHeight=1074&originWidth=1170&size=188823&status=done&width=585)
+![image.png](https://cdn.nlark.com/yuque/0/2019/png/160590/1561952869494-b914312a-5ce5-4550-8927-421e0486bc19.png#align=left&display=inline&height=530&name=image.png&originHeight=1060&originWidth=1172&size=230302&status=done&width=586)
+<a name="Fhhs2"></a>
+### 回信地址
+回信地址是对方回复时，我们收到邮件的地址。回信地址最好验证一下，否则无法批量发送。<br />![image.png](https://cdn.nlark.com/yuque/0/2019/png/160590/1561954231927-f11e0e88-ec5b-4492-ab58-49505db81bc9.png#align=left&display=inline&height=214&name=image.png&originHeight=428&originWidth=2166&size=204330&status=done&width=1083)
 
 
 <a name="uEm9L"></a>
