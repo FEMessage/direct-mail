@@ -6,7 +6,7 @@ describe('SingleSendMail', () => {
 
   beforeEach(() => {
     singleConfig = {
-      AccountName: 'user@mail.levy.ren',
+      AccountName: 'account@mail.levy.ren',
       FromAlias: '邮件昵称',
       ToAddress: 'chenriwei@deepexi.com',
       Subject: '邮件标题',
@@ -42,7 +42,7 @@ describe('SingleSendMail', () => {
 
 describe('BatchSendMail', () => {
   let batchConfig = {
-    AccountName: 'user@mail.levy.ren',
+    AccountName: 'account@mail.levy.ren',
     ReceiversName: 'defaultReceivers',
     TemplateName: 'offer'
   }
