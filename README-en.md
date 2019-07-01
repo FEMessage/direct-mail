@@ -12,13 +12,13 @@ Ali Cloud mail push (direct mail) Node. js SDK (compatible with browser side)
 <a name="f61d6c3e"></a>
 ## Table of Contents
 
-- [Feature](https://www.yuque.com/deepexi-serverless/onx52o/rse4eb?translate=en#feature)
-- [Install](https://www.yuque.com/deepexi-serverless/onx52o/rse4eb?translate=en#install)
-- [Example](https://www.yuque.com/deepexi-serverless/onx52o/rse4eb?translate=en#example)
-- [Attention](https://www.yuque.com/deepexi-serverless/onx52o/rse4eb?translate=en#attention)
-- [Reference](https://www.yuque.com/deepexi-serverless/onx52o/rse4eb?translate=en#reference)
-- [Contributors](https://www.yuque.com/deepexi-serverless/onx52o/rse4eb?translate=en#contributors)
-- [License](https://www.yuque.com/deepexi-serverless/onx52o/rse4eb?translate=en#license)
+- [Feature](#feature)
+- [Install](#install)
+- [Example](#example)
+- [Attention](#attention)
+- [Reference](#reference)
+- [Contributors](#contributors)
+- [License](#license)
 
 <a name="Feature"></a>
 ## Feature
@@ -27,7 +27,7 @@ Ali Cloud mail push (direct mail) Node. js SDK (compatible with browser side)
 - Promise style
 - Support the following API
   - SingleSendMail single mailing interface, supports sending triggers and other single Mail
-  - BatchSendMail batch mailing interface supports sending batch mail by calling templates<br />[⬆Back to Top](https://www.yuque.com/deepexi-serverless/onx52o/rse4eb?translate=en#table-of-contents)
+  - BatchSendMail batch mailing interface supports sending batch mail by calling templates<br />[⬆Back to Top](#table-of-contents)
 
 <a name="Install"></a>
 ## Install
@@ -36,7 +36,7 @@ Ali Cloud mail push (direct mail) Node. js SDK (compatible with browser side)
 yarn add @femessage/direct-mail
 ```
 
-[⬆Back to Top](https://www.yuque.com/deepexi-serverless/onx52o/rse4eb?translate=en#table-of-contents)
+[⬆Back to Top](#table-of-contents)
 
 <a name="Example"></a>
 ## Example
@@ -106,18 +106,18 @@ directMail
   .catch(err => {})
 ```
 
-[⬆Back to Top](https://www.yuque.com/deepexi-serverless/onx52o/rse4eb?translate=en#table-of-contents)
+[⬆Back to Top](#table-of-contents)
 
 <a name="Attention"></a>
 ## Attention
 
-`HtmlBody` Or `TextBody` The brackets () of the English input method cannot appear, otherwise the signature will not pass.<br />In short, it is best not to have English input characters in the mail content.<br />[⬆Back to Top](https://www.yuque.com/deepexi-serverless/onx52o/rse4eb?translate=en#table-of-contents)
+`HtmlBody` Or `TextBody` The brackets () of the English input method cannot appear, otherwise the signature will not pass.<br />In short, it is best not to have English input characters in the mail content.<br />[⬆Back to Top](#table-of-contents)
 
 <a name="Reference"></a>
 ## Reference
 
 - For more Parameter descriptions, please see [Aliyun official docs](https://help.aliyun.com/document_detail/29444.html?spm=a2c4g.11186623.6.597.22653016eJ4hhp)
-- Product related manual, please see [FAQ](https://www.yuque.com/deepexi-serverless/onx52o/docs/faq.md)<br />[⬆Back to Top](https://www.yuque.com/deepexi-serverless/onx52o/rse4eb?translate=en#table-of-contents)
+- Product related manual, please see [FAQ](https://www.yuque.com/deepexi-serverless/onx52o/docs/faq.md)<br />[⬆Back to Top](#table-of-contents)
 
 <a name="Contributors"></a>
 ## Contributors
