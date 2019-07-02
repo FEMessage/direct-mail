@@ -50,8 +50,8 @@ const singleConfig = {
   ToAddress: 'toaddress@mail.com',
   Subject: '标题',
   HtmlBody: '<html>内容</html>',
-  AccessKeySecret: '',
-  AccessKeyId: ''
+  AccessKeySecret: process.env.ACCESS_KEY_ID,
+  AccessKeyId: process.env.ACCESS_KEY_SECRET
 }
 
 directMail
@@ -69,8 +69,8 @@ const batchConfig = {
   AccountName: 'yourmail@mail.com',
   ReceiversName: 'defaultReceivers',
   TemplateName: 'offer',
-  AccessKeySecret: '',
-  AccessKeyId: ''
+  AccessKeySecret: process.env.ACCESS_KEY_ID,
+  AccessKeyId: process.env.ACCESS_KEY_SECRET
 }
 
 directMail
@@ -81,14 +81,17 @@ directMail
 
 ### dotenv
 
-AccessKeyId、AccessKeySecret 也可以通过环境来设置。
-
-推荐使用[dotenv](https://www.npmjs.com/package/dotenv)
+AccessKeyId、AccessKeySecret 的设置也可以使用[dotenv](https://www.npmjs.com/package/dotenv)
 
 ```sh
 #.env
 ACCESS_KEY_ID=
 ACCESS_KEY_SECRET=
+```
+
+```js
+// 加载环境变量
+require('dotenv').config()
 ```
 
 则可以在调用时，不用传 AccessKeyId、AccessKeySecret
@@ -113,7 +116,7 @@ directMail
 ## Attention
 `HtmlBody` 或 `TextBody` 不能出现英文输入法的括号 ()，否则签名不通过。
 
-总之，邮件内容最好不要出现英文输入法的字符。
+总之，邮件内容最好不要出现英文输入法的特殊字符。
 
 [⬆ Back to Top](#table-of-contents)
 
