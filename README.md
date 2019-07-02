@@ -9,6 +9,8 @@
 
 阿里云 邮件推送 (DirectMail) Node.js SDK(兼容浏览器端)
 
+[English](./README-en.md)
+
 ## Table of Contents
 
 * [Feature](#feature)
