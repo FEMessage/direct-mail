@@ -316,9 +316,9 @@
     "@types/istanbul-lib-coverage" "*"
     "@types/istanbul-lib-report" "*"
 
-"@types/node@^12.0.8":
-  version "12.0.10"
-  resolved "https://registry.npm.taobao.org/@types/node/download/@types/node-12.0.10.tgz#51babf9c7deadd5343620055fc8aff7995c8b031"
+"@types/node@^12.0.10":
+  version "12.0.12"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.0.12.tgz#cc791b402360db1eaf7176479072f91ee6c6c7ca"
 
 "@types/stack-utils@^1.0.1":
   version "1.0.1"
@@ -4693,11 +4693,11 @@ rollup-pluginutils@^2.6.0, rollup-pluginutils@^2.8.1:
     estree-walker "^0.6.1"
 
 rollup@^1.9.0:
-  version "1.16.2"
-  resolved "https://registry.npm.taobao.org/rollup/download/rollup-1.16.2.tgz#959aeae4b06c8e540749bac442d6d37aefb9217d"
+  version "1.16.4"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-1.16.4.tgz#0a13bace39cf6c1784781e383e605d1b6274c2f4"
   dependencies:
     "@types/estree" "0.0.39"
-    "@types/node" "^12.0.8"
+    "@types/node" "^12.0.10"
     acorn "^6.1.1"
 
 rsvp@^4.8.4:
