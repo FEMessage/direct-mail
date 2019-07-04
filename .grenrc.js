@@ -13,10 +13,18 @@ module.exports = {
   changelogFilename: 'CHANGELOG.md',
   template: {
     issue: '- {{name}} [{{text}}]({{url}})',
-    group: '\n### {{heading}}\n'
+    group: "\n### {{heading}}\n"
   },
+  // https://github.com/nuxt/nuxt.js/releases
+  // https://gitmoji.carloscuesta.me
   groupBy: {
     '✨ New Features:': ['enhancement'],
-    '🐛 Bug Fixes:': ['bug']
+    '🐛 Bug Fixes:': ['bug'],
+    '📖 Documentation:': ['documentation'],
+    '💅 Refactors:': ['refactor'],
+    '♻️ Tests:': ['test'],
+    '🚀 Performance:': ['performance'],
+    '⚓ Dependency upgrades:': ['dependencies'],
+    '🏡 Chore:': ['chore']
   }
 }
