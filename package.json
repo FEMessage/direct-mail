@@ -16,7 +16,7 @@
   "scripts": {
     "dev": "vue-styleguidist server",
     "test": "jest",
-    "build": "npm run build:unpkg & npm run build:es & npm run build:umd & npm run doc",
+    "build": "npm run build:unpkg & npm run build:es & npm run build:umd",
     "build:umd":
       "rollup --config build/rollup.config.js --format umd --file dist/direct-mail.umd.js",
     "build:es":
