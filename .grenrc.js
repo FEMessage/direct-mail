@@ -13,7 +13,7 @@ module.exports = {
   changelogFilename: 'CHANGELOG.md',
   template: {
     issue: '- {{name}} [{{text}}]({{url}})',
-    group: "\n### {{heading}}\n"
+    group: '\n### {{heading}}\n'
   },
   // https://github.com/nuxt/nuxt.js/releases
   // https://gitmoji.carloscuesta.me
