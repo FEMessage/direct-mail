@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "github-release-notes": "^0.17.0",
-    "husky": "^0.14.3",
+    "husky": "^3.0.0",
     "jest": "^24.8.0",
     "minimist": "^1.2.0",
     "prettier": "1.12.1",
