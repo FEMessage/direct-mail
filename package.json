@@ -8,15 +8,8 @@
     "type": "git",
     "url": "https://github.com/FEMessage/direct-mail.git"
   },
-  "keywords": [
-    "aliyun",
-    "direct mail"
-  ],
-  "files": [
-    "src",
-    "dist",
-    "yarn.lock"
-  ],
+  "keywords": ["aliyun", "direct mail"],
+  "files": ["src", "dist", "yarn.lock"],
   "main": "dist/direct-mail.umd.js",
   "module": "dist/direct-mail.esm.js",
   "unpkg": "dist/direct-mail.min.js",
@@ -24,9 +17,12 @@
     "dev": "vue-styleguidist server",
     "test": "jest",
     "build": "npm run build:unpkg & npm run build:es & npm run build:umd & npm run doc",
-    "build:umd": "rollup --config build/rollup.config.js --format umd --file dist/direct-mail.umd.js",
-    "build:es": "rollup --config build/rollup.config.js --format es --file dist/direct-mail.esm.js",
-    "build:unpkg": "rollup --config build/rollup.config.js --format iife --file dist/direct-mail.min.js",
+    "build:umd":
+      "rollup --config build/rollup.config.js --format umd --file dist/direct-mail.umd.js",
+    "build:es":
+      "rollup --config build/rollup.config.js --format es --file dist/direct-mail.esm.js",
+    "build:unpkg":
+      "rollup --config build/rollup.config.js --format iife --file dist/direct-mail.min.js",
     "precommit": "pretty-quick --staged",
     "stdver": "standard-version -m '[skip ci] chore(release): v%s'",
     "release": "gren release --override"
