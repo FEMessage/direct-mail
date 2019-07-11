@@ -134,9 +134,14 @@ directMail
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-
 <!-- prettier-ignore -->
-<table><tr><td align="center"><a href="https://github.com/levy9527/blog"><img src="https://avatars3.githubusercontent.com/u/9384365?v=4" width="100px;" alt="levy"/><br /><sub><b>levy</b></sub></a><br /><a href="https://github.com/FEMessage/direct-mail/commits?author=levy9527" title="Code">💻</a> <a href="https://github.com/FEMessage/direct-mail/commits?author=levy9527" title="Tests">⚠️</a> <a href="https://github.com/FEMessage/direct-mail/commits?author=levy9527" title="Documentation">📖</a></td><td align="center"><a href="https://github.com/donhac"><img src="https://avatars0.githubusercontent.com/u/9813324?v=4" width="100px;" alt="donhac"/><br /><sub><b>donhac</b></sub></a><br /><a href="https://github.com/FEMessage/direct-mail/commits?author=donhac" title="Code">💻</a> <a href="https://github.com/FEMessage/direct-mail/commits?author=donhac" title="Documentation">📖</a> <a href="#infra-donhac" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td></tr></table>
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/levy9527/blog"><img src="https://avatars3.githubusercontent.com/u/9384365?v=4" width="100px;" alt="levy"/><br /><sub><b>levy</b></sub></a><br /><a href="https://github.com/FEMessage/direct-mail/commits?author=levy9527" title="Code">💻</a> <a href="https://github.com/FEMessage/direct-mail/commits?author=levy9527" title="Tests">⚠️</a> <a href="https://github.com/FEMessage/direct-mail/commits?author=levy9527" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/donhac"><img src="https://avatars0.githubusercontent.com/u/9813324?v=4" width="100px;" alt="donhac"/><br /><sub><b>donhac</b></sub></a><br /><a href="https://github.com/FEMessage/direct-mail/commits?author=donhac" title="Code">💻</a> <a href="https://github.com/FEMessage/direct-mail/commits?author=donhac" title="Documentation">📖</a> <a href="#infra-donhac" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
+    <td align="center"><a href="https://colmugx.github.io"><img src="https://avatars1.githubusercontent.com/u/21327913?v=4" width="100px;" alt="ColMugX"/><br /><sub><b>ColMugX</b></sub></a><br /><a href="https://github.com/FEMessage/direct-mail/commits?author=colmugx" title="Documentation">📖</a></td>
+  </tr>
+</table>
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
