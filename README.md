@@ -116,7 +116,8 @@ directMail
 [⬆ Back to Top](#table-of-contents)
 
 ## Attention
-`HtmlBody` 或 `TextBody` 不能出现英文输入法的括号 ()，否则会请求400，出现报错`SignatureDoesNotMatch`。
+- `HtmlBody` 或 `TextBody` 不能出现英文输入法的括号 ()，否则会请求400，出现报错`SignatureDoesNotMatch`。
+- 当需要超链接时请直接以文本形式写下链接，不需要使用“添加链接”工具
 
 总之，邮件内容最好不要出现英文输入法的特殊字符。
 
