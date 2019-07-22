@@ -1,6 +1,6 @@
 {
   "name": "@femessage/direct-mail",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "send Aliyun DirectMail with Node.js",
   "author": "https://github.com/FEMessage",
   "license": "MIT",
