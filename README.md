@@ -1,5 +1,6 @@
 # direct-mail
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/06b730099b254208b079ba23b348e030)](https://app.codacy.com/app/FEMessage/direct-mail?utm_source=github.com&utm_medium=referral&utm_content=FEMessage/direct-mail&utm_campaign=Badge_Grade_Settings)
 [![Build Status](https://travis-ci.com/FEMessage/direct-mail.svg?branch=master)](https://travis-ci.com/FEMessage/direct-mail)
 [![NPM Download](https://img.shields.io/npm/dm/@femessage/direct-mail.svg)](https://www.npmjs.com/package/@femessage/direct-mail)
 [![NPM Version](https://img.shields.io/npm/v/@femessage/direct-mail.svg)](https://www.npmjs.com/package/@femessage/direct-mail)
