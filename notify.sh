@@ -10,8 +10,8 @@ resp_tmp_file=resp.tmp
 
 curl -H "Authorization: token $GITHUB_TOKEN" $url > $resp_tmp_file
 
-html_url=`cat $resp_tmp_file | sed -n 5p | sed 's/\"html_url\"://g' | awk -F '"' '{print $2}'`
-body=`cat $resp_tmp_file | grep body | sed 's/\"body\"://g;s/\"//g'`
+html_url=$(cat $resp_tmp_file | sed -n 5p | sed 's/\"html_url\"://g' | awk -F '"' '{print $2}')
+body=$(cat $resp_tmp_file | grep body | sed 's/\"body\"://g;s/\"//g')
 
 msg='{"msgtype": "markdown", "markdown": {"title": "direct-mail更新", "text": "@所有人\n# [direct-mail]('$html_url')\n'$body'"}}'
 
