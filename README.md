@@ -7,27 +7,27 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/FEMessage/direct-mail/pulls)
 [![Automated Release Notes by gren](https://img.shields.io/badge/%F0%9F%A4%96-release%20notes-00B2EE.svg)](https://github-tools.github.io/github-release-notes/)
 
-阿里云 邮件推送 (DirectMail) Node.js SDK(兼容浏览器端)
+阿里云邮件推送 (DirectMail) Node.js SDK(兼容浏览器端)
 
 [English](./README-en.md)
 
 ## Table of Contents
 
-* [Feature](#feature)
-* [Install](#install)
-* [Example](#example)
-* [Attention](#attention)
-* [Reference](#reference)
-* [Contributors](#contributors)
-* [License](#license)
+- [Feature](#feature)
+- [Install](#install)
+- [Example](#example)
+- [Attention](#attention)
+- [Reference](#reference)
+- [Contributors](#contributors)
+- [License](#license)
 
 ## Feature
 
-* 兼容 Node.js/浏览器端
-* Promise 风格
-* 支持以下 API
-  * SingleSendMail 单一发信接口，支持发送触发和其他单个邮件
-  * BatchSendMail 批量发信接口，支持通过调用模板的方式发送批量邮件
+- 兼容 Node.js/浏览器端
+- Promise 风格
+- 支持以下 API
+  - SingleSendMail 单一发信接口，支持发送触发和其他单个邮件
+  - BatchSendMail 批量发信接口，支持通过调用模板的方式发送批量邮件
 
 [⬆ Back to Top](#table-of-contents)
 
@@ -116,7 +116,8 @@ directMail
 [⬆ Back to Top](#table-of-contents)
 
 ## Attention
-`HtmlBody` 或 `TextBody` 不能出现英文输入法的括号 ()，否则会请求400，出现报错`SignatureDoesNotMatch`。
+
+`HtmlBody` 或 `TextBody` 不能出现英文输入法的括号 ()，否则会请求 400，出现报错`SignatureDoesNotMatch`。
 
 总之，邮件内容最好不要出现英文输入法的特殊字符。
 
@@ -124,8 +125,8 @@ directMail
 
 ## Reference
 
-* 更多参数说明，请看[aliyun official docs](https://help.aliyun.com/document_detail/29444.html?spm=a2c4g.11186623.6.597.22653016eJ4hhp)
-* direct-mail相关使用手册，请看[操作指南](docs/direct-mail-guide.md)
+- 更多参数说明，请看[aliyun official docs](https://help.aliyun.com/document_detail/29444.html?spm=a2c4g.11186623.6.597.22653016eJ4hhp)
+- direct-mail 相关使用手册，请看[操作指南](docs/direct-mail-guide.md)
 
 [⬆ Back to Top](#table-of-contents)
 
