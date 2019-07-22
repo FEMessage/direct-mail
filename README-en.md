@@ -7,7 +7,7 @@
 [![](https://img.shields.io/badge/PRs-welcome-brightgreen.svg#align=left&display=inline&height=20&originHeight=20&originWidth=90&status=done&width=90)](https://github.com/FEMessage/direct-mail/pulls)
 [![](https://img.shields.io/badge/%F0%9F%A4%96-release%20notes-00B2EE.svg#align=left&display=inline&height=20&originHeight=20&originWidth=104&status=done&width=104)](https://github-tools.github.io/github-release-notes/)
 
-Alibaba Cloud Eail Service (direct mail) Node. js SDK (compatible with browser side)
+Alibaba Cloud Email Service (direct mail) Node. js SDK (compatible with browser side)
 
 ## Table of Contents
 
@@ -24,9 +24,10 @@ Alibaba Cloud Eail Service (direct mail) Node. js SDK (compatible with browser s
 - Compatible with Node.js/browser
 - Promise style
 - Support the following API
+
   - SingleSendMail single mailing interface, supports sending triggers and other single Mail
   - BatchSendMail batch mailing interface supports sending batch mail by calling templates
-  
+
 [⬆Back to Top](#table-of-contents)
 
 ## Install
@@ -90,7 +91,7 @@ ACCESS_KEY_SECRET=
 require('dotenv').config()
 ```
 
-Then AccessKeyId and  AccessKeySecret can be omitted.
+Then AccessKeyId and AccessKeySecret can be omitted.
 
 ```javascript
 const config = {
@@ -109,6 +110,7 @@ directMail
 [⬆Back to Top](#table-of-contents)
 
 ## Attention
+
 - `HtmlBody` Or `TextBody` cannot contain the brackets `()` of the English input method, otherwise the signature will not pass.
 - Please only type your link by text when you need hyperlink, DON'T USE "ADD LINK" TOOL.
 
@@ -126,7 +128,8 @@ In short, it is best not to have English input method special characters in the 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 | [![](https://avatars3.githubusercontent.com/u/9384365?v=4#alt=levy&width=100)<br />**levy**](https://github.com/levy9527/blog)<br />[💻](https://github.com/FEMessage/direct-mail/commits?author=levy9527) [⚠️](https://github.com/FEMessage/direct-mail/commits?author=levy9527) [📖](https://github.com/FEMessage/direct-mail/commits?author=levy9527) | [![](https://avatars0.githubusercontent.com/u/9813324?v=4#alt=donhac&width=100)<br />**donhac**](https://github.com/donhac)<br />[💻](https://github.com/FEMessage/direct-mail/commits?author=donhac) [📖](https://github.com/FEMessage/direct-mail/commits?author=donhac) [🚇](#infra-donhac) |
-| --- | --- |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+
 
 ## License
 
@@ -137,4 +140,3 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 ## Inspiration
 
 thanks to [Mttylzq](https://github.com/Mttylzq/ali-email)
-
