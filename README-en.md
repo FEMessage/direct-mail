@@ -111,7 +111,10 @@ directMail
 
 ## Attention
 
-`HtmlBody` Or `TextBody` cannot contain the brackets `()` of the English input method, otherwise the signature will not pass.<br />In short, it is best not to have English input method special characters in the mail content.<br />[⬆Back to Top](#table-of-contents)
+- `HtmlBody` Or `TextBody` cannot contain the brackets `()` of the English input method, otherwise the signature will not pass.
+- Please only type your link by text when you need hyperlink, DON'T USE "ADD LINK" TOOL.
+
+In short, it is best not to have English input method special characters in the mail content.<br />[⬆Back to Top](#table-of-contents)
 
 ## Reference
 
