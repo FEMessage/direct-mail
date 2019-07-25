@@ -128,7 +128,7 @@ directMail
 ## Reference
 
 - 更多参数说明，请看[aliyun official docs](https://help.aliyun.com/document_detail/29444.html?spm=a2c4g.11186623.6.597.22653016eJ4hhp)
-- direct-mail 相关使用手册，请看[操作指南](docs/direct-mail-guide.md)
+- direct-mail 相关使用手册，请看[操作指南](docs/guide-direct-mail.md)
 
 [⬆ Back to Top](#table-of-contents)
 
