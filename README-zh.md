@@ -1,15 +1,14 @@
 # direct-mail
 
-[![](https://cdn.nlark.com/yuque/0/2019/svg/224563/1561962031200-ee0155c3-814e-4e69-b76b-87f95dd7a378.svg#align=left&display=inline&height=20&originHeight=20&originWidth=97&size=0&status=done&width=97)](https://travis-ci.com/FEMessage/direct-mail)
-[![](https://img.shields.io/npm/dm/@femessage/direct-mail.svg#align=left&display=inline&height=20&originHeight=20&originWidth=134&status=done&width=134)](https://www.npmjs.com/package/@femessage/direct-mail)
-[![](https://img.shields.io/npm/v/@femessage/direct-mail.svg#align=left&display=inline&height=20&originHeight=20&originWidth=80&status=done&width=80)](https://www.npmjs.com/package/@femessage/direct-mail)
-[![](https://img.shields.io/npm/l/@femessage/direct-mail.svg#align=left&display=inline&height=20&originHeight=20&originWidth=78&status=done&width=78)](https://github.com/FEMessage/direct-mail/blob/master/LICENSE)
-[![](https://img.shields.io/badge/PRs-welcome-brightgreen.svg#align=left&display=inline&height=20&originHeight=20&originWidth=90&status=done&width=90)](https://github.com/FEMessage/direct-mail/pulls)
-[![](https://img.shields.io/badge/%F0%9F%A4%96-release%20notes-00B2EE.svg#align=left&display=inline&height=20&originHeight=20&originWidth=104&status=done&width=104)](https://github-tools.github.io/github-release-notes/)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/06b730099b254208b079ba23b348e030)](https://app.codacy.com/app/FEMessage/direct-mail?utm_source=github.com&utm_medium=referral&utm_content=FEMessage/direct-mail&utm_campaign=Badge_Grade_Settings)
+[![Build Status](https://travis-ci.com/FEMessage/direct-mail.svg?branch=master)](https://travis-ci.com/FEMessage/direct-mail)
+[![NPM Download](https://img.shields.io/npm/dm/@femessage/direct-mail.svg)](https://www.npmjs.com/package/@femessage/direct-mail)
+[![NPM Version](https://img.shields.io/npm/v/@femessage/direct-mail.svg)](https://www.npmjs.com/package/@femessage/direct-mail)
+[![NPM License](https://img.shields.io/npm/l/@femessage/direct-mail.svg)](https://github.com/FEMessage/direct-mail/blob/master/LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/FEMessage/direct-mail/pulls)
+[![Automated Release Notes by gren](https://img.shields.io/badge/%F0%9F%A4%96-release%20notes-00B2EE.svg)](https://github-tools.github.io/github-release-notes/)
 
-Alibaba Cloud Email Service (direct mail) Node. js SDK (compatible with browser side)
-
-[中文文档](./README-zh.md)
+阿里云邮件推送 (DirectMail) Node.js SDK(兼容浏览器端)
 
 ## Table of Contents
 
@@ -23,14 +22,13 @@ Alibaba Cloud Email Service (direct mail) Node. js SDK (compatible with browser 
 
 ## Feature
 
-- Compatible with Node.js/browser
-- Promise style
-- Support the following API
+- 兼容 Node.js/浏览器端
+- Promise 风格
+- 支持以下 API
+  - SingleSendMail 单一发信接口，支持发送触发和其他单个邮件
+  - BatchSendMail 批量发信接口，支持通过调用模板的方式发送批量邮件
 
-  - SingleSendMail single mailing interface, supports sending triggers and other single Mail
-  - BatchSendMail batch mailing interface supports sending batch mail by calling templates
-
-[⬆Back to Top](#table-of-contents)
+[⬆ Back to Top](#table-of-contents)
 
 ## Install
 
@@ -38,14 +36,15 @@ Alibaba Cloud Email Service (direct mail) Node. js SDK (compatible with browser 
 yarn add @femessage/direct-mail
 ```
 
-[⬆Back to Top](#table-of-contents)
+[⬆ Back to Top](#table-of-contents)
 
 ## Example
 
-### Send A Single Mail
+### 发送单个邮件
 
-```javascript
+```js
 const directMail = require('@femessage/direct-mail')
+
 const singleConfig = {
   AccountName: 'yourmail@mail.com',
   FromAlias: '化名',
@@ -55,16 +54,18 @@ const singleConfig = {
   AccessKeySecret: process.env.ACCESS_KEY_ID,
   AccessKeyId: process.env.ACCESS_KEY_SECRET
 }
+
 directMail
   .SingleSendMail(singleConfig)
   .then(resp => {})
   .catch(err => {})
 ```
 
-### Send Mail In Batches
+### 批量发送邮件
 
-```javascript
+```js
 const directMail = require('@femessage/direct-mail')
+
 const batchConfig = {
   AccountName: 'yourmail@mail.com',
   ReceiversName: 'defaultReceivers',
@@ -72,15 +73,16 @@ const batchConfig = {
   AccessKeySecret: process.env.ACCESS_KEY_ID,
   AccessKeyId: process.env.ACCESS_KEY_SECRET
 }
+
 directMail
   .BatchSendMail(batchConfig)
   .then(resp => {})
   .catch(err => {})
 ```
 
-### Dotenv
+### dotenv
 
-AccessKeyId, AccessKeySecret can also be set via [dotenv](https://www.npmjs.com/package/dotenv)
+AccessKeyId、AccessKeySecret 的设置也可以使用[dotenv](https://www.npmjs.com/package/dotenv)
 
 ```sh
 #.env
@@ -89,13 +91,13 @@ ACCESS_KEY_SECRET=
 ```
 
 ```js
-// load the config
+// 加载环境变量
 require('dotenv').config()
 ```
 
-Then AccessKeyId and AccessKeySecret can be omitted.
+则可以在调用时，不用传 AccessKeyId、AccessKeySecret
 
-```javascript
+```js
 const config = {
   AccountName: 'yourmail@mail.com',
   FromAlias: '化名',
@@ -103,27 +105,30 @@ const config = {
   Subject: '标题',
   HtmlBody: '<html>内容</html>'
 }
+
 directMail
   .SingleSendMail(config)
   .then(resp => {})
   .catch(err => {})
 ```
 
-[⬆Back to Top](#table-of-contents)
+[⬆ Back to Top](#table-of-contents)
 
 ## Attention
 
-- `HtmlBody` Or `TextBody` cannot contain the brackets `()` of the English input method, otherwise the signature will not pass.
-- Please only type your link by text when you need hyperlink, DON'T USE "ADD LINK" TOOL.
+- `HtmlBody` 或 `TextBody` 不能出现英文输入法的括号 ()，否则会请求 400，出现报错`SignatureDoesNotMatch`。
+- 当需要超链接时请直接以文本形式写下链接，不需要使用“添加链接”工具
 
-In short, it is best not to have English input method special characters in the mail content.<br />[⬆Back to Top](#table-of-contents)
+总之，邮件内容最好不要出现英文输入法的特殊字符。
+
+[⬆ Back to Top](#table-of-contents)
 
 ## Reference
 
-- For more Parameter descriptions, please see [Aliyun official docs](https://help.aliyun.com/document_detail/29444.html?spm=a2c4g.11186623.6.597.22653016eJ4hhp)
-- Product related manual, please see [FAQ](https://www.yuque.com/deepexi-serverless/onx52o/docs/faq.md)
+- 更多参数说明，请看[aliyun official docs](https://help.aliyun.com/document_detail/29444.html?spm=a2c4g.11186623.6.597.22653016eJ4hhp)
+- direct-mail 相关使用手册，请看[操作指南](docs/guide-direct-mail.md)
 
-[⬆Back to Top](#table-of-contents)
+[⬆ Back to Top](#table-of-contents)
 
 ## Contributors
 
@@ -142,6 +147,8 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+
+[⬆ Back to Top](#table-of-contents)
 
 ## License
 
