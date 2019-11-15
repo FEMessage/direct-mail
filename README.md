@@ -14,22 +14,21 @@ Alibaba Cloud Email Service (direct mail) Node. js SDK (compatible with browser 
 
 ## Table of Contents
 
-* [Feature](#feature)
-* [Install](#install)
-* [Example](#example)
-* [Attention](#attention)
-* [Reference](#reference)
-* [Contributors](#contributors)
-* [License](#license)
+- [Feature](#feature)
+- [Install](#install)
+- [Example](#example)
+- [Attention](#attention)
+- [Reference](#reference)
+- [Contributors](#contributors)
+- [License](#license)
 
 ## Feature
 
-* Compatible with Node.js/browser
-* Promise style
-* Support the following API
-
-  * SingleSendMail single mailing interface, supports sending triggers and other single Mail
-  * BatchSendMail batch mailing interface supports sending batch mail by calling templates
+- Compatible with Node.js/browser
+- Promise style
+- Support the following API
+  - SingleSendMail single mailing interface, supports sending triggers and other single Mail
+  - BatchSendMail batch mailing interface supports sending batch mail by calling templates
 
 [⬆Back to Top](#table-of-contents)
 
@@ -114,15 +113,15 @@ directMail
 
 ## Attention
 
-* `HtmlBody` Or `TextBody` cannot contain the brackets `()` of the English input method, otherwise the signature will not pass.
-* Please only type your link by text when you need hyperlink, DON'T USE "ADD LINK" TOOL.
+- `HtmlBody` Or `TextBody` cannot contain the brackets `()` of the English input method, otherwise the signature will not pass.
+- Please only type your link by text when you need hyperlink, DON'T USE "ADD LINK" TOOL.
 
 In short, it is best not to have English input method special characters in the mail content.<br />[⬆Back to Top](#table-of-contents)
 
 ## Reference
 
-* For more Parameter descriptions, please see [Aliyun official docs](https://help.aliyun.com/document_detail/29444.html?spm=a2c4g.11186623.6.597.22653016eJ4hhp)
-* Product related manual, please see [FAQ](https://www.yuque.com/deepexi-serverless/onx52o/docs/faq.md)
+- For more Parameter descriptions, please see [Aliyun official docs](https://help.aliyun.com/document_detail/29444.html?spm=a2c4g.11186623.6.597.22653016eJ4hhp)
+- Product related manual, please see [FAQ](https://www.yuque.com/deepexi-serverless/onx52o/docs/faq.md)
 
 [⬆Back to Top](#table-of-contents)
 
