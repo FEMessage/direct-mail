@@ -52,8 +52,8 @@ const singleConfig = {
   ToAddress: 'toaddress@mail.com',
   Subject: '标题',
   HtmlBody: '<html>内容</html>',
-  AccessKeySecret: process.env.ACCESS_KEY_ID,
-  AccessKeyId: process.env.ACCESS_KEY_SECRET
+  AccessKeyId: process.env.ACCESS_KEY_ID,
+  AccessKeySecret: process.env.ACCESS_KEY_SECRET
 }
 directMail
   .SingleSendMail(singleConfig)
@@ -69,8 +69,8 @@ const batchConfig = {
   AccountName: 'yourmail@mail.com',
   ReceiversName: 'defaultReceivers',
   TemplateName: 'offer',
-  AccessKeySecret: process.env.ACCESS_KEY_ID,
-  AccessKeyId: process.env.ACCESS_KEY_SECRET
+  AccessKeyId: process.env.ACCESS_KEY_ID,
+  AccessKeySecret: process.env.ACCESS_KEY_SECRET
 }
 directMail
   .BatchSendMail(batchConfig)
