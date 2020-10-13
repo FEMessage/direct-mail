@@ -27,8 +27,8 @@ Alibaba Cloud Email Service (direct mail) Node. js SDK (compatible with browser 
 - Compatible with Node.js/browser
 - Promise style
 - Support the following API
-  - SingleSendMail single mailing interface, supports sending triggers and other single Mail
-  - BatchSendMail batch mailing interface supports sending batch mail by calling templates
+  - SingleSendMail, supports sending triggers and other single mail
+  - BatchSendMail, supports sending a batch of mails by calling templates
 
 [⬆Back to Top](#table-of-contents)
 
@@ -61,7 +61,7 @@ directMail
   .catch(err => {})
 ```
 
-### Send Mail In Batches
+### Send A Batch of Mails
 
 ```javascript
 const directMail = require('@femessage/direct-mail')
@@ -121,7 +121,7 @@ In short, it is best not to have English input method special characters in the 
 ## Reference
 
 - For more Parameter descriptions, please see [Aliyun official docs](https://help.aliyun.com/document_detail/29444.html?spm=a2c4g.11186623.6.597.22653016eJ4hhp)
-- Product related manual, please see [FAQ](https://www.yuque.com/deepexi-serverless/onx52o/docs/faq.md)
+- Product related manual, please see [FAQ](https://github.com/FEMessage/direct-mail/blob/dev/docs/guide-direct-mail.md)
 
 [⬆Back to Top](#table-of-contents)
 
